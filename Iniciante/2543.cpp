@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, l;
+    while(cin >> n >> l) {
+        int a, b, c = 0;
+        for(int i = 0; i < n; i++) {
+            cin >> a >> b;
+            if(a == l && b == 0) c++;
+        }
+        cout << c << endl;
+    }
+    return 0;
+}
